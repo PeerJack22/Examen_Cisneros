@@ -47,9 +47,17 @@ public class Parroquia extends Canton{
     public void mostrarPais() {
         super.mostrarPais();
         System.out.println("Información de la parroquia");
-        System.out.println("Nombre: " + nombreParroquia);
-        System.out.println("Barrio principal: " + barrioPrincipal);
-        System.out.println("Número de iglesias: " + n_iglesias);
+        System.out.println("Nombre: " + getNombreParroquia());
+        System.out.println("Barrio principal: " + getBarrioPrincipal());
+        System.out.println("Número de iglesias: " + getN_iglesias());
+        System.out.println();
+    }
+
+    @Override
+    public void Descripcion() {
+        super.Descripcion();
+        System.out.println("Descripcion de la parroquia");
+        System.out.println(getNombreParroquia()+ " es una parroquia que esta en el cantón "+ getNombreCanton());
         System.out.println();
     }
 }

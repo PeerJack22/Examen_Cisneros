@@ -35,8 +35,16 @@ public class Barrio extends Parroquia{
     public void mostrarPais() {
         super.mostrarPais();
         System.out.println("Información del barrio");
-        System.out.println("Barrio: "+nombreBarrio);
-        System.out.println("Número de panaderias: "+n_panaderias);
+        System.out.println("Barrio: "+ getNombreBarrio());
+        System.out.println("Número de panaderias: "+ getN_panaderias());
+        System.out.println();
+    }
+
+    @Override
+    public void Descripcion() {
+        super.Descripcion();
+        System.out.println("Descripción del barrio");
+        System.out.println(getNombreBarrio() + " es un barrio que esta en la parroquia "+ getNombreParroquia());
         System.out.println();
     }
 }

@@ -8,14 +8,14 @@ public class Ciudad extends Pais{
 
     public Ciudad(String nombre, String gentilicio, String continente, String nombreCiudad, String alcalde) {
         super(nombre, gentilicio, continente);
-        this.nombre = nombreCiudad;
+        this.nombreCiudad = nombreCiudad;
         this.alcalde = alcalde;
     }
 
     //Setters y getters
 
     public String getNombreCiudad() {
-        return nombre;
+        return nombreCiudad;
     }
 
     public void setNombreCiudad(String nombreCiudad) {
@@ -42,4 +42,11 @@ public class Ciudad extends Pais{
         System.out.println();
     }
 
+    @Override
+    public void Descripcion() {
+        super.Descripcion();
+        System.out.println("Descripcion de la ciudad");
+        System.out.println( getNombreCiudad() + " es una ciudad que esta en el país "+ getNombrePais());
+        System.out.println();
+    }
 }
